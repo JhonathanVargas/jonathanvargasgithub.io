@@ -1,0 +1,576 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+*{
+
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+header {
+/*transparencia de la caja */
+background: rgba(0,0,0,0.3);
+/*altura por defecto*/
+height: auto;
+/*ancho de la caja */
+width: 100%;
+/*posicion fija*/
+position: fixed;
+/* ningun desplazamiento superior*/
+top: 0;
+/* ningun desplazamiento ala izquierda*/
+left: 0;
+/*elementos unos al lado de los otros */
+display: flex;
+/*distribucion entre el espacio del nombre y los iconos del menu */
+justify-content: space-between;
+/*espacio de los lados */
+padding: 0 5% 0 px;
+/* control de las cajas ...calcula las dimensiones de los elmentos, incluye elpadding y border*/
+box-sizing: border-box;
+/*altura*/
+height: 60px;
+/*transicion de cursor*/
+transition: 0.5s;
+text-decoration: none;
+font-family: 'Chakra Petch', sans-serif;
+
+
+
+}
+
+
+
+div img{
+
+    width: 70px;
+     ;
+}
+
+
+
+
+h1{
+	/*color de la fuente */
+	color: white;
+	/*tipo de fuente */
+	font-family: 'M PLUS 1 Code', sans-serif;
+	padding: 20px 10px;
+
+}
+
+
+h3{
+
+	text-align: center;
+}
+
+
+
+p{
+
+	text-align:center; ;
+}
+
+
+
+
+
+/*pie de pagina */
+
+
+footer {
+
+    background :#212529;
+	height: auto;
+	width: 100%;
+	font-family: serif;
+	color: white;
+	position: absolute;
+
+}
+
+section{
+
+	display: flex;
+	justify-content: center;
+}
+
+article{
+
+	margin: 80px;
+}
+
+article h3{
+   
+
+
+   font-size:1.8rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 3rem;
+   font-family: 'Recursive', sans-serif;
+ }
+
+ article p{
+   max-width: 500px;
+   margin : 23px auto;
+   line-height: 28px;
+   font-size: 14px;
+ }
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*clases*/
+
+
+
+.z{
+
+
+	background:  rgba(0,0,0,0.4) url(../img/m4.jpg);
+	background-blend-mode: darken;
+	  /*especifica el tamaña de las imagenes de para la pagina */
+	text-align: center;
+	padding: 60% 0 0 0;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 110%;
+
+}
+
+
+/*---------------------------*/
+/*------texto decorativo-----*/
+/*---------------------------*/
+
+
+.texto{
+
+	color: #ede0d4;
+	position: absolute;
+	bottom: 22%;
+	left: 5%;
+}
+
+
+
+.texto h1{
+	font-size: 120px;
+	line-height: 160px;
+	margin-left: 10px;
+	color: transparent;
+	-webkit-text-stroke:1px #ede0d4;
+	background: url(../img/back.png);
+	-webkit-background-clip: text;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+	position: fixed;
+	top: 20%;
+
+}
+
+
+
+@keyframes back{
+
+   100%{
+   	background-position: 2000px 0; 
+   }
+
+
+}
+
+
+/*---------------------------*/
+/*------texto decorativo-----*/
+/*------------------------------------------------------------------------------*/
+
+/*---------------------------*/
+/*----- Productos-------------*/
+/*---------------------------*/
+
+.w .ct{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px; 
+
+}
+
+.w .ct img{
+
+   width: calc(30% - 10px);
+   margin:10px;
+   object-fit: cover;
+   cursor: pointer; 
+}
+
+.productos{
+
+	text-align: center;
+	position: relative;
+	padding: 50px;
+    font-family: 'Jura', sans-serif;
+	font-size: 25px;
+	background: url(m5.jpg);
+	font-weight: 10%;
+	background-size: cover;
+
+}
+
+.productos h4{
+
+	color:#ede0d4;
+	border: 2px solid #ede0d4;
+	padding: 10px 0 10px 0;
+}
+
+
+
+.w{
+width: 100%;
+	background:  rgba(0,0,0,0.7)  url(../img/m5.jpg);
+	background-size: cover;
+	background-blend-mode: darken;
+	position: relative;
+
+}
+
+
+/*---------------------------*/
+/*---------pie de pagina-----*/
+/*---------------------------*/
+
+
+
+
+
+ .redes{
+
+ 	list-style: none;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	margin: 30px 0 30px 0;
+
+ }
+ 
+
+ .redes li {
+ 	margin: 0 10px;
+ }
+
+
+.redes a{
+text-decoration: none;
+color: white;
+
+}
+
+.redes a i{
+
+font-size: 2rem;
+
+}
+
+
+.redes a:hover i{
+
+color :#0077b6;
+}
+
+.foi{
+
+	background: black;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.foi p{
+   font-size: 14px;
+   /*espacio entre palabras*/
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+
+
+
+
+
+/*---------------------------*/
+/*-----------Nosotros--------*/
+/*---------------------------*/
+
+
+.contenedor{
+
+	width: 100%;
+	display: flex;
+	max-width: 2100px;
+	background: #ede0d4;
+	position: relative;
+	padding:  1% 0  4%  0;
+	background-size: 100% 110%;
+	
+
+
+
+   
+}
+
+.a{
+     width: 100% ;
+     margin:20px;
+	 cursor: default;
+    /*recorta los elemnetos para q no sobresalgan de la caja*/
+     overflow: hidden;
+     /*background: white ;*/
+     transition: all 400ms ease;
+     background: rgba(0,0,0,0.7);
+     
+}
+
+.a:hover{
+	/*se mueven de manera vertical asi arriba 3 %*/
+	transform: translateY(3%);
+
+     	box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+     	
+
+}
+
+.a img{
+
+	width: 100%;
+	height: 250px;
+	
+}
+
+.contenido p{
+
+
+	padding: 20px 20px;
+	font-family: 'Bai Jamjuree', sans-serif;
+	color: white;
+}
+
+
+
+.noso {
+
+	text-align: center;
+	position: relative;
+	padding: 50px;
+    font-family: 'Jura', sans-serif;
+	font-size: 25px;
+	background: #ede0d4;
+	font-weight: 10%;
+}
+
+
+.noso h2{
+
+
+    
+	color:black;
+	border: 2px solid black;
+	padding: 10px 0 10px 0;
+}
+
+.j{
+
+	padding: 5% 0  2% 0;
+	font-family: 'Yuji Syuku', serif;
+	color: white;
+}
+
+
+/*---------------------------*/
+/*----Barra de navegacion----*/
+/*---------------------------*/
+
+.menu{
+     
+     /*alinear elementos unos al lado de los otros*/
+	display: flex;
+	/*distribuye el espacio y se centra */
+	justify-content: center;
+	/*alinaer elemnto al centro */
+	align-items: center;
+	/*quitar viñetas */
+	list-style: none; 
+
+}
+
+.menu ul li{
+
+	display: inline-block;
+	position: relative;
+	margin: 0 20px;
+} 
+
+
+
+.menu ul li a{
+
+	text-decoration: none;
+	color: white;
+	padding: 0 5px;
+}
+
+ .menu li{
+   /*margen de los cuatro lados */
+   margin:0 16px;
+   /*grosor de la fuente */
+   font-weight: 500;
+   /*la manito del cursor*/
+   cursor: pointer;
+  /*transicion de cursor*/
+   transition: 0.5s;
+   /*color de los elemntos */
+   color: white;
+   /*espacio entre cada elemento ala izquierda */
+   margin-left: 20px;
+   font-family: font-family: 'Rajdhani', sans-serif;
+   
+}
+
+
+.menu li a {
+
+   
+	text-decoration: none;
+	color: white;
+}
+
+
+/*---------------------*/
+/*efecto hover en linea*/
+.menu .n::before{
+
+	content: "";
+	position: absolute;
+	background:white;
+	height: 3px;
+	width: 0;
+	left: 0;
+	top: 100%;
+	margin: 7px 0;
+	transition:all 0.5s linear;
+}
+
+
+.menu .n::after{
+
+	content: "";
+	position: absolute;
+	background:white;
+	height: 3px;
+	width: 0;
+	right: 0;
+	top: 100%;
+	margin: 7px 0;
+	transition:all 0.5s linear;
+}
+
+.menu .n:hover::before{
+ width: 100%;
+ background: #e6ccb2;
+}
+
+.menu .n:hover::after{
+ width: 100%;
+ background: #e6ccb2;
+}
+
+
+/*efecto hover en linea*/
+/*---------------------*/
+ 
+ /*--------------------------------*/
+ /*boton de registro*/
+
+ .regi{
+       
+    /*fondo del boton*/
+   background-color: transparent;
+	/*espacio de los lados */
+   padding: 10px 24px;
+   border: 2px solid #e6ccb2;
+   /*redondes del boton*/
+   border-radius: 38px;
+   /*color del a palabra */
+   color: white;
+   /*grosor de la fuente */
+   font-weight: 600%;
+   /*la manito del cursor*/
+   cursor:pointer;
+   transition: 0.5s;
+}
+ /*efecto hover del boton registro*/
+.regi:hover{
+  
+  background-color:#e6ccb2 ;
+  box-shadow: 0 0 2px #e6ccb2, 0 0 5px  #e6ccb2, 0 0 5px;
+  color:black;
+}
+ 
+
+/*boton catalogo*/
+
+.cata{
+       
+    /*fondo del boton*/
+   background-color: transparent;
+	/*espacio de los lados */
+   padding: 10px 24px;
+   border: 2px solid #e6ccb2;
+   /*redondes del boton*/
+   border-radius: 38px;
+   /*color del a palabra */
+   color: white;
+   /*grosor de la fuente */
+   font-weight: 600%;
+   /*la manito del cursor*/
+   cursor:pointer;
+   transition: 0.5s;
+   width: 50%;
+   margin-left: 25%;
+justify-content: center;
+text-align:center; 
+}
+
+.cata:hover{
+
+  
+  background-color:#e6ccb2 ;
+  box-shadow: 0 0 2px #e6ccb2, 0 0 5px  #e6ccb2, 0 0 5px;
+  color:black;
+}
+
+.lo{
+
+	color: white;
+
+}
+.cata ul li a{
+
+	list-style: none;
+	text-decoration: none;
+}
+
+
+.cata ul li {
+
+
+	list-style: none;
+	text-decoration: none;
+}
+
